@@ -5,7 +5,7 @@ require 'rubocop/beachy/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'rubocop-beachy'
-  spec.version       = Rubocop::Beachy::VERSION
+  spec.version       = RuboCop::Beachy::VERSION
   spec.authors       = ['Josh Aronson']
   spec.email         = ['jparonson@gmail.com']
 
