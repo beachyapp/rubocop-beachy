@@ -18,8 +18,7 @@ module RuboCop
 
         def base_number(node)
           receiver, = *node
-          node = expression(receiver)
-          node.children[0].loc.expression.source
+          receiver.children[0].loc.expression.source
         end
 
         def offensive?(node)
