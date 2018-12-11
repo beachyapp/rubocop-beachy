@@ -2,7 +2,7 @@ module RuboCop
   module Cop
     module Beachy
       class ZeroMethod < Cop
-        MSG  = 'Replace with `Fixnum#zero?`.'
+        MSG  = 'Replace with `Fixnum#zero?`.'.freeze
         ZERO = s(:int, 0)
 
         def on_send(node)
@@ -22,10 +22,11 @@ module RuboCop
         end
 
         def offensive?(node)
-          receiver, method, args = *node
+          _receiver, method, args = *node
 
-          return unless [:==, :!=].include?(method)
+          return unless %i[== !=].include?(method)
           return unless args == ZERO
+
           true
         end
       end

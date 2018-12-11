@@ -68,6 +68,17 @@ Style/MethodCallWithArgsParentheses:
   Enabled: true
   IgnoredMethods:
     - 'puts'
+    - 'require'
+    - 'be'
+    - 'to'
+    - 'not_to'
+    - 'describe'
+    - 'context'
+    - 'it'
+    - 'specify'
+    - 'source'
+    - 'add_development_dependency'
+    - 'add_dependency'
 
 Style/NestedParenthesizedCalls:
   Exclude:
