@@ -1,0 +1,74 @@
+Documentation:
+  Enabled: false
+
+# Naming/
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+
+# Layout/
+Layout/AlignHash:
+  EnforcedColonStyle: table
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
+Layout/SpaceAroundOperators:
+  Enabled: false
+
+# Lint/
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*'
+
+# Metrics/
+Metrics/ClassLength:
+  Max: 360
+
+Metrics/ModuleLength:
+  Max: 360
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/AbcSize:
+  Max: 40
+
+Metrics/BlockLength:
+  Enabled: false
+
+# Style/
+Style/TrivialAccessors:
+  IgnoreClassMethods: true
+
+Style/MutableConstant:
+  Enabled: true
+
+Style/MultilineIfModifier:
+  Enabled: false
+
+Style/SignalException:
+  EnforcedStyle: only_fail
+
+Style/DateTime:
+  Enabled: false
+
+Style/FormatStringToken:
+  EnforcedStyle: template
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+  IgnoredMethods:
+    - 'puts'
+
+Style/NestedParenthesizedCalls:
+  Exclude:
+    - 'spec/**/*'
